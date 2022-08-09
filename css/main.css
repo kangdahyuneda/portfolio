@@ -1,0 +1,499 @@
+#wrap {}
+
+#MainVisual {
+    width: 100%;
+}
+
+#MainVisual .main {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    height: 100vh;
+}
+
+#MainVisual .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#MainVisual .l_top {
+    position: absolute;
+    top: 93px;
+    left: 242px;
+}
+
+.l_top p {
+    color: #fff;
+    font-size: 18px;
+
+}
+
+#MainVisual .r_bottom {
+    position: absolute;
+    right: 242px;
+    bottom: 95px;
+}
+
+.r_bottom p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.r_bottom p span {
+    font-size: 30px;
+}
+
+/**************** Main 완성  추가 이미지 효과등을 고려해볼 것 *************/
+#intro {
+    width: 100%;
+    height: 100vh;
+}
+
+#intro>span {
+    width: 100%;
+    height: 40px;
+    background-color: #dbd3f8;
+    display: block;
+    font-size: 0;
+}
+
+#intro h2 {
+    color: #953eb2;
+    font-size: 70px;
+    font-family: 'ONE-Mobile-POP';
+    padding-top: 100px;
+    padding-left: 160px;
+}
+
+#intro .myself {
+    padding-top: 80px;
+    padding-left: 160px;
+}
+
+.myself p {
+    font-size: 20px;
+    color: #5a567d;
+    font-weight: bold;
+    background: url(../img/cont1_bluebar.png)no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.myself p>span {
+    font-size: 30px;
+    color: #b376c8;
+}
+
+.myself .photo {
+    width: 400px;
+    height: 450px;
+    border: 1px solid #000;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+#intro .cont1 {
+    display: flex;
+}
+
+/********************** 사진넣는 부분까지 완료 ***************************/
+.cont1 .cont1in {
+    display: flex;
+    padding-left: 200px;
+    padding-top: 80px;
+}
+
+.cont1in .identify {
+    background: url(../img/cont1_line1.png)no-repeat;
+}
+
+.identify>ul {
+    padding-left: 20px;
+}
+
+.identify .school h3 {
+    padding-top: 5px;
+}
+
+.identify .school li {
+    padding: 67px 0;
+}
+
+.identify .school li p {
+    padding-top: 7px;
+    font-size: 15px;
+}
+
+.identify .job li {
+    padding-top: 55px;
+}
+
+.identify .job li p {
+    padding: 7px 0;
+    font-size: 15px;
+}
+
+.identify .drive {
+    padding-top: 52px;
+}
+
+.identify .drive li {
+    padding-top: 30px;
+}
+
+.identify .drive li p {
+    font-size: 15px;
+}
+
+/************************  학력/경력/자격증란 끝 *******************************/
+.cont1in .skill {
+    margin-left: 170px;
+    background: url(../img/cont1_skillbar.png)no-repeat;
+    width: 395px;
+    height: auto;
+}
+
+.skill>ul {
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.skill ul li {
+    padding-top: 45px;
+    width: 100%;
+    height: 70px;
+}
+
+.skill ul li p span {
+    display: inline-block;
+}
+
+.skill ul li p:nth-child(2) {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+
+}
+
+.skill ul li p span:nth-child(1) {
+    width: 90%;
+    height: 3px;
+    background-color: #dbd3f8;
+    border-radius: 20px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+}
+
+.skill ul li p span:nth-child(3) {
+    width: 10%;
+    text-align: center;
+    float: right;
+}
+
+.skill ul li p span:nth-child(2).skill_bar {
+    width: 80%;
+}
+
+.skill ul li p span:nth-child(2) {
+    height: 6px;
+    background: linear-gradient(-90deg, #9795ef, #f9c5d1);
+    border-radius: 20px;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    transition: all 1s;
+    filter: drop-shadow(0 0 6px #fff5d7);
+
+}
+
+.skill ul li p:nth-child(3) {
+    font-size: 14px;
+}
+
+/***************** 스킬부분 완료 js전 *************/
+
+#menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+#menu .menubar {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-70%, -50%);
+    width: 600px;
+    height: auto;
+
+}
+
+.menubar li {}
+
+.menubar li p {
+    display: flex;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.menubar li p>span {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    padding-right: 50px;
+    width: 200px;
+    height: 128px;
+}
+
+.menubar li:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.menubar li:last-child p {
+    background: url(../img/usetool.png)no-repeat 250px 10px;
+    font-size: 0;
+}
+
+/************************* menubar ********************************/
+
+#app {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/cont3_back.png)no-repeat 100% 100%;
+}
+
+#app h2 {
+    color: #953eb2;
+    font-size: 70px;
+    font-family: 'ONE-Mobile-POP';
+    padding-left: 160px;
+    padding-bottom: 30px;
+}
+
+#app h3 {
+    padding-left: 187px;
+    background: url(../img/cont1_bluebar.png)no-repeat 160px -10px;
+    padding-bottom: 50px;
+}
+
+#app>p {
+    padding-left: 160px;
+    width: 580px;
+    padding-bottom: 50px;
+}
+
+#app .text {
+    padding-left: 160px;
+}
+
+#app .text ul li {
+    display: flex;
+    padding: 5px 0;
+}
+
+#app .text ul li>span {
+    font-weight: bold;
+    width: 100px;
+}
+
+#app>span {
+    display: block;
+    margin-left: 160px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 200px;
+    height: 45px;
+    background: linear-gradient(-90deg, #f9c5d1, #9795ef);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#app .screen {
+    padding-left: 160px;
+    position: relative;
+}
+
+#app .screen ul li figure>img {}
+
+#app .screen ul li .S_img {
+    position: absolute;
+    top: 40px;
+    left: 178px;
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#app .screen ul li .S_img img {
+    width: 100%;
+}
+
+/************************** app 일부완성 ***********************************/
+#web {
+    width: 100%;
+    height: 100vh;
+    background-color: #e6e3fa;
+    position: relative;
+    margin-top: 300px;
+}
+
+#web .web_pub {
+    width: 1694px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.web_pub>h2 {
+    font-size: 36px;
+    color: #752ea1;
+    font-family: 'ONE-Mobile-POP';
+    font-weight: 400;
+    line-height: 80%;
+    margin-bottom: 20px;
+    width: 450px;
+
+}
+
+.web_pub>p {
+    background: url(../img/cont1_bluebar.png)no-repeat 0 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.Lweb_site {
+    width: 450px;
+    height: 520px;
+    box-sizing: border-box;
+}
+
+.Lweb_site .web_tab {
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.web_tab ul {
+    display: flex;
+}
+
+.web_tab ul li {
+    width: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.web_tab ul li.on>span {
+    color: #752ea1;
+    font-weight: bold;
+}
+
+.web_tab ul li span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+.siteSlider {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    background-color: #fff;
+    transition: all 0.4s ease 0s;
+    padding: 25px;
+}
+
+
+.siteSlider ul li h3 {
+    font-size: 24px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3e3e6b;
+}
+
+.siteSlider ul li:first-child h3 {
+    font-family: 'Vitro_core';
+}
+
+.siteSlider ul li:last-child h3 {
+    font-family: 'establishRoomNo703OTF';
+}
+
+.siteSlider ul li p {
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.siteSlider ul li:first-child h4 {
+    height: 70px;
+    display: block;
+    background: url(../img/vipscolor_03.png)no-repeat 0 40px;
+    margin-top: 20px;
+}
+
+.siteSlider ul li span {
+    margin-top: 20px;
+}
+
+.siteSlider ul li ul {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-top: 100px;
+}
+
+.siteSlider ul li ul li {
+    width: calc(50% - 10px);
+    text-align: center;
+    border: 1px solid #3E3E6B;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 3px 3px 0px #3e3e6b;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.siteSlider ul li ul li a {
+    color: #3E3E6B;
+    display: block;
+    transition: all 0.4s ease 0s;
+}
