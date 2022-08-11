@@ -400,13 +400,15 @@
 }
 
 #web .web_pub {
-    width: 1694px;
+    width: 80%;
     box-sizing: border-box;
     margin: 0 auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 100px;
+
 }
 
 .web_pub>h2 {
@@ -647,7 +649,7 @@
 }
 
 #pub .publishing {
-    width: 1694px;
+    width: 80%;
     box-sizing: border-box;
     margin: 0 auto;
     position: absolute;
@@ -740,7 +742,7 @@
     display: none;
 }
 
-.pubsite ul li p {
+.pubsite>ul>li>p {
     font-size: 14px;
     padding: 20px 0;
     height: 80%;
@@ -841,9 +843,9 @@
 
 .Rpub_site ul li img {
     position: absolute;
-    left: 26px;
+    left: 18px;
     top: 26px;
-    width: 962px;
+    width: 945px;
     height: 563px;
     overflow: hidden;
 }
