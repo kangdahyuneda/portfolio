@@ -59,6 +59,16 @@ $(function () {
     });
 
 
+    $(".pub_tab>ul>li").click(function () {
+        var pubLi = $(this).index();
+        pubtab(pubLi);
+        pubnum = pubLi;
+        pubslider(pubnum);
+        // $(".pub_tab>ul>li").removeClass("on");
+        // $(this).addClass("on");
+
+    });
+
 
 
 
