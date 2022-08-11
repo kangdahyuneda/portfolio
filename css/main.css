@@ -249,6 +249,7 @@
     height: auto;
     position: relative;
     padding-bottom: 80px;
+    padding-top: 100px;
 }
 
 #menu img {
@@ -258,15 +259,13 @@
 
 #menu .menubar {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 70%;
-    transform: translate(-70%, -50%);
+    transform: translate(-70%, -70%);
     width: 600px;
     height: auto;
 
 }
-
-.menubar li {}
 
 .menubar li p {
     display: flex;
