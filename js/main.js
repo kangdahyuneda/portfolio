@@ -1,11 +1,50 @@
 $(function () {
     var $skillVar = $('.skill>ul>li>p>span:nth-child(2)');
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 900) {
             $skillVar.addClass('skill_bar');
         } else {
             $skillVar.removeClass('skill_bar');
         }
+    });
+
+    //메뉴
+    $(window).scroll(function () {
+        var currentTop = $(window).scrollTop();
+        // 스크롤 크기에 따라 헤더가 달라짐
+
+        if (currentTop >= 969) {
+            $(".gnb").addClass("on");
+            // $(".info").addClass("mini");
+        } else {
+            $(".gnb").removeClass("on");
+            // $(".info").removeClass("mini");
+        }
+    });
+    // 메뉴 오픈
+    var menuStatus = false;
+    $(".gnb>.util").click(function () {
+        // e.preventDefault();
+        if (menuStatus == false) {
+            // $(".banner>ul>li").removeClass("on");
+            $(".gnb>ul").addClass("on");
+            $(".utilbar").addClass("on");
+            $(".util>i").text("CLOSE");
+            menuStatus = true;
+        } else {
+            $(".gnb>ul").removeClass("on");
+            $(".utilbar").removeClass("on");
+            $(".util>i").text("MENU");
+            // $(this).addClass("on");
+            menuStatus = false;
+        }
+
+    });
+
+    $(".gnb>ul>li>a").click(function () {
+        var obj = $(this).attr("href");
+        var posTop = $(obj).offset().top;
+        $("html,body").animate({ scrollTop: posTop }, 800);
     });
 
 

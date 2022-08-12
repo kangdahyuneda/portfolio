@@ -52,6 +52,125 @@
 }
 
 /**************** Main 완성  추가 이미지 효과등을 고려해볼 것 *************/
+/* gnb시작 */
+.gnb {
+    position: fixed;
+    left: 55%;
+    top: 70px;
+    transform: translateX(-50%);
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 10000;
+    cursor: pointer;
+    display: none;
+}
+
+.gnb.on {
+    display: block;
+}
+
+
+.util {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #B4B4D8;
+    padding-top: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.util>i {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.util>.utilbar {
+    width: 60%;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.util>.utilbar>span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto;
+    transform-origin: 0% 50%;
+    transition: all 0.4s ease 0s;
+}
+
+.util>.utilbar>span:first-of-type {
+    margin-top: 0;
+}
+
+.gnb>ul {
+    background: #B4B4D8;
+    width: 780px;
+    height: 55px;
+    border-radius: 15px;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+    transition: all 0.4s ease 0s;
+}
+
+.gnb>ul.on {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.gnb>ul>li {
+    float: left;
+    line-height: 55px;
+    width: 20%;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+
+.gnb>ul>li>a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+
+.gnb>ul>li:hover {
+    background: #9393c1;
+}
+
+.gng>ul>li:hover a {
+    letter-spacing: 3px;
+}
+
+.utilbar.on span {
+    margin-left: 2px;
+}
+
+.utilbar.on span:nth-of-type(1) {
+    transform: rotate(30deg);
+}
+
+.utilbar.on span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.utilbar.on span:nth-of-type(3) {
+    transform: rotate(-30deg);
+}
+
+
 #intro {
     width: 100%;
     height: 100vh;
@@ -893,6 +1012,7 @@
     font-family: 'establishRoomNo703OTF';
     font-weight: bold;
     font-size: 32px;
+    color: #908b8b;
 
 }
 
