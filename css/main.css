@@ -180,6 +180,7 @@
 
 .skill ul li p span {
     display: inline-block;
+
 }
 
 .skill ul li p:nth-child(2) {
@@ -187,6 +188,7 @@
     height: 50px;
     line-height: 50px;
     position: relative;
+    transition: all 1s;
 
 }
 
@@ -223,6 +225,7 @@
     left: 0;
     transform: translate(0, -50%);
     transition: all 2s;
+    width: 0%;
     /* filter: drop-shadow(0 0 6px #fff5d7); */
 
 }
@@ -358,21 +361,30 @@
     position: relative;
 }
 
-#app .screen ul li figure>img {}
+#app .screen ul li {
+    width: 700px;
+    height: 554px;
+}
+
+#app .screen ul li figure img {
+    width: 100%;
+}
 
 #app .screen ul li .S_img {
     position: absolute;
-    top: 40px;
-    left: 178px;
-    width: 640px;
-    height: 400px;
+    top: 23px;
+    left: 184px;
+    width: 655px;
+    height: 457px;
     overflow: hidden;
+    border-radius: 20px;
+
 }
 
 #app .screen ul li .S_img img {
     width: 100%;
     animation-name: SogonImg;
-    animation-duration: 13s;
+    animation-duration: 18s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
@@ -583,6 +595,7 @@
     border-left: 1px solid #3E3E6B;
     transform: rotate(135deg);
     cursor: pointer;
+    z-index: 1000;
 }
 
 .siteSlider {
@@ -839,6 +852,7 @@
     border-left: 1px solid #3E3E6B;
     transform: rotate(135deg);
     cursor: pointer;
+    z-index: 1000;
 }
 
 .pubSlider {

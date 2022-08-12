@@ -1,54 +1,4 @@
 $(function () {
-    //     $('.siteSlider>ul>li').removeClass("on");
-    //     $('.siteSlider>ul>li').eq(pubslide).addClass("on");
-    //     $(".R_pub>ul>li").removeClass("on");
-    //     $(".R_pub>ul>li").eq(pubslide).addClass("on");
-
-    //     $('.web_tab ul li').removeClass("on");
-    //     $('.web_tab ul li').eq(pubslide).addClass("on");
-    // });
-
-    // $('.siteSlider>ul').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     dots: false,
-    //     arrows: true,
-    //     autoplay: false,
-    //     pauseOnHover: false,
-    // });
-
-    // $('.pubsite>ul').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     dots: false,
-    //     arrows: true,
-    //     autoplay: false,
-    //     pauseOnHover: false,
-    // });
-
-    //퍼블리싱 탭메뉴 함수
-    // $('.web_tab>ul>li').click(function () {
-    //     $(this).css({
-    //         color: '#752ea1'
-    //     }).siblings().css({
-    //         color: '#000'
-    //     })
-    //     let i = $(this).index();
-    //     $('.siteSlider>ul>li').eq(i).show().siblings().hide();
-    //     $('.Rweb_site>ul>li').eq(i).show().siblings().hide();
-    // });
-
-    // $('.pub_tab ul li').on('click', function () {
-    //     $(this).css({
-    //         color: '#752ea1'
-    //     }).siblings().css({
-    //         color: '#000'
-    //     })
-    //     let i = $(this).index();
-    //     $('.pubsite>ul>li').eq(i).show().siblings().hide();
-    //     $('.Rpub_site>ul>li').eq(i).show().siblings().hide();
-    // });
-
     var $skillVar = $('.skill>ul>li>p>span:nth-child(2)');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1000) {
@@ -59,28 +9,6 @@ $(function () {
     });
 
 
-    // $(".pub_tab>ul>li").click(function () {
-    //     var pubLi = $(this).index();
-    //     pubtab(pubLi);
-    //     pubnum = pubLi;
-    //     pubslider(pubnum);
-    //     // $(".pub_tab>ul>li").removeClass("on");
-    //     // $(this).addClass("on");
-
-    // });
-
-    // function pubslider(pubslide){
-    //     $(".siteSlider>ul>li").removeClass("on");
-    //     $(".siteSlider>ul>li").eq(pubslide).addClass("on");
-    //     $(".R_pub>ul>li").removeClass("on");
-    //     $(".R_pub>ul>li").eq(pubslide).addClass("on");
-    //   }
-    //   // 퍼블리싱 탭메뉴 함수
-    //   function pubtab(pubslide){
-    //     $(".pub_tab>ul>li").removeClass("on");
-    //     $(".pub_tab>ul>li").eq(pubslide).addClass("on");
-    //   }
-
 
     //퍼블리싱
     var pubnum = 0;
@@ -89,12 +17,8 @@ $(function () {
         if (pubnum < 0) {
             pubnum = 1;
         }
-        pubslider(pubnum);
-        pubtab(pubnum);
-        // $(".siteSlider").children().removeClass("on");
-        // $(".siteSlider").children().eq(pubnum).addClass("on");
-        // $(".R_pub>ul>li").removeClass("on");
-        // $(".R_pub>ul>li").eq(pubnum).addClass("on");
+        siteSlider(pubnum);
+        webtab(pubnum);
     });
 
     $(".pub_controler>.next").click(function () {
@@ -102,43 +26,29 @@ $(function () {
         if (pubnum > 1) {
             pubnum = 0;
         }
-        pubslider(pubnum);
-        pubtab(pubnum);
-        // $(".siteSlider").children().removeClass("on");
-        // $(".siteSlider").children().eq(pubnum).addClass("on");
-        // $(".R_pub>ul>li").removeClass("on");
-        // $(".R_pub>ul>li").eq(pubnum).addClass("on");
+        siteSlider(pubnum);
+        webtab(pubnum);
     });
 
     $(".web_tab>ul>li").click(function () {
         var pubLi = $(this).index();
-        pubtab(pubLi);
+        webtab(pubLi);
         pubnum = pubLi;
-        pubslider(pubnum);
-        // $(".pub_tab>ul>li").removeClass("on");
-        // $(this).addClass("on");
-
+        siteSlider(pubnum);
     });
 
     //퍼블리싱 슬라이드 함수
-    function pubslider(pubslide) {
+    function siteSlider(siteSlider) {
         $(".siteSlider>ul>li").removeClass("on");
-        $(".siteSlider>ul>li").eq(pubslide).addClass("on");
+        $(".siteSlider>ul>li").eq(siteSlider).addClass("on");
         $(".Rweb_site>ul>li").removeClass("on");
-        $(".Rweb_site>ul>li").eq(pubslide).addClass("on");
+        $(".Rweb_site>ul>li").eq(siteSlider).addClass("on");
     }
     // 퍼블리싱 탭메뉴 함수
-    function pubtab(pubslide) {
+    function webtab(pubslide) {
         $(".web_tab>ul>li").removeClass("on");
         $(".web_tab>ul>li").eq(pubslide).addClass("on");
     }
-
-
-
-
-
-
-
 
 
 
@@ -151,10 +61,6 @@ $(function () {
         }
         pubslider(pubnum);
         pubtab(pubnum);
-        // $(".siteSlider").children().removeClass("on");
-        // $(".siteSlider").children().eq(pubnum).addClass("on");
-        // $(".R_pub>ul>li").removeClass("on");
-        // $(".R_pub>ul>li").eq(pubnum).addClass("on");
     });
 
     $(".pub_arrow>.right").click(function () {
@@ -164,10 +70,6 @@ $(function () {
         }
         pubslider(pubnum);
         pubtab(pubnum);
-        // $(".siteSlider").children().removeClass("on");
-        // $(".siteSlider").children().eq(pubnum).addClass("on");
-        // $(".R_pub>ul>li").removeClass("on");
-        // $(".R_pub>ul>li").eq(pubnum).addClass("on");
     });
 
     $(".pub_tab>ul>li").click(function () {
@@ -175,8 +77,6 @@ $(function () {
         pubtab(pubLi);
         pubnum = pubLi;
         pubslider(pubnum);
-        // $(".pub_tab>ul>li").removeClass("on");
-        // $(this).addClass("on");
 
     });
 
