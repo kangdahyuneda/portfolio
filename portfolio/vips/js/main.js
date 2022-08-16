@@ -109,5 +109,8 @@ $(function () {
     })
 
 
+    $('.rbox li img').on('click', function () {
+        $('.rbox li.on').find('img').attr('src', 'img/hover.png')
+    });
 
 })//opening

@@ -149,7 +149,7 @@
 
 #container .cont1 {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     position: relative;
 }
@@ -172,7 +172,7 @@
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: 35px;
+    bottom: 40px;
     transform: translateX(-50%);
     font-size: 0;
     border: 0;
@@ -204,7 +204,7 @@
     font-size: 48px;
     font-family: 'OKGUNG';
     width: 871px;
-    padding-left: 60px;
+    padding-left: 80px;
     position: absolute;
     top: 20%;
     transform: translateY(-20%);
@@ -219,7 +219,7 @@
 .cont2in .txt {
     padding-top: 50px;
     width: 871px;
-    padding-left: 60px;
+    padding-left: 80px;
 }
 
 .cont2in .txt ul dt {
@@ -240,7 +240,7 @@
 
 .cont2in .btn {
     width: 871px;
-    padding-left: 60px;
+    padding-left: 80px;
     position: relative;
 }
 
@@ -264,7 +264,7 @@
 .cont2in .youtube {
     position: absolute;
     top: -5px;
-    right: 100px;
+    right: 150px;
 }
 
 /*********************** cont2 ***********************/
@@ -431,18 +431,22 @@
     font-family: 'OKGUNG';
     font-size: 40px;
     padding-left: 60px;
+    padding-top: 40px;
 }
 
 .cont4 .RV_box {
-    /* text-align: center; */
+    text-align: center;
     padding-top: 95px;
+    padding-bottom: 3px;
     position: relative;
     width: 100%;
-    background: url(../img/cont4_back.jpg)no-repeat;
     display: flex;
+    background: url(../img/cont4_back.jpg)no-repeat;
 }
 
+
 .RV_box .lbox {
+    /*  position: absolute; */
     padding-left: 130px;
 
 }
@@ -455,9 +459,11 @@
 }
 
 .RV_box .rbox {
+    /*  position: absolute; */
     background-color: #fff;
     width: 1018px;
     height: 939px;
+    border: 1px solid #000;
 
 }
 
@@ -482,8 +488,8 @@
 
 .RV_box .rbox li img {
     padding: 60px 0 33px 0;
+    cursor: pointer;
 }
-
 
 
 .RV_box .rbox li span {
@@ -523,6 +529,7 @@
     background-color: #3e2821;
     width: 100%;
     height: 140px;
+    display: none;
 }
 
 .top_ft ul {
