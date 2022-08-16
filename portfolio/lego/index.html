@@ -8,7 +8,12 @@
     <title>NCS레고</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <header id="header">
@@ -25,27 +30,27 @@
                 <ul class="icon clear">
                     <li>
                         <a href="#">
-                        <img src="img/gnb1_lens.png">
+                            <img src="img/gnb1_lens.png">
                         </a>
                     </li>
                     <li class="iconpc">
                         <a href="#">
-                        <img src="img/gnb2_heart.png">
+                            <img src="img/gnb2_heart.png">
                         </a>
                     </li>
                     <li class="iconpc">
                         <a href="#">
-                        <img src="img/gnb3_cart.png">
+                            <img src="img/gnb3_cart.png">
                         </a>
                     </li>
                     <li class="off">
                         <a href="#">
-                        <img src="img/mb_icon_lego.png">
+                            <img src="img/mb_icon_lego.png">
                         </a>
                     </li>
                     <li class="off">
                         <a href="#">
-                        <img src="img/mb_icon_cart.png">
+                            <img src="img/mb_icon_cart.png">
                         </a>
                     </li>
                 </ul><!-- icon -->
@@ -60,23 +65,34 @@
                     <li><a href="#">CS</a></li>
                 </ul><!-- gnb -->
             </div><!-- headerin -->
-        </header><!-- header --> 
+        </header><!-- header -->
         <section id="mainVisual">
             <ul class="simg">
-                <li><a href="#">
-                    <img src="img/mainVisual_620.png" class="mobile">
-                    <img src="img/mainVisual_768.jpg" class="pad">
-                    <img src="img/mainVisual.png" class="pc">
-                </a></li>
-                <a href="#" class="prev"><img src="img/main_prev.png"></a>
-                <a href="#" class="next"><img src="img/main_next.png"></a>
+                <li class="mobile">
+                    <img src="img/mainVisual_620.png">
+                    <img src="img/mainVisual_620_2.jpg">
+                    <img src="img/mainVisual_620_3.jpg">
+                    <img src="img/mainVisual_620_4.jpg">
+                </li><!-- mobile -->
+                <li class="pad">
+                    <img src="img/mainVisual_780_1.jpg">
+                    <img src="img/mainVisual_780_2.jpg">
+                    <img src="img/mainVisual_780_3.jpg">
+                    <img src="img/mainVisual_780_4.jpg">
+                </li><!-- pad -->
+                <li class="pc">
+                    <img src="img/mainVisual_1920_1.png">
+                    <img src="img/mainVisual_1920_2.png">
+                    <img src="img/mainVisual_1920_3.png">
+                    <img src="img/mainVisual_1920_4.png">
+                </li><!-- pc -->
             </ul><!-- simg -->
-            <ul class="pager clear">
+            <!-- <ul class="pager clear">
                 <li><a href="#">1</a></li>
                 <li class="on"><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
-            </ul><!-- pager -->
+            </ul>-->
         </section><!-- mainVisual -->
         <div id="container">
             <section class="memu">
@@ -92,7 +108,8 @@
                             <a href="#">
                                 <img src="img/cont1_2.png">
                                 <p>레어 제품</p>
-                            </a></li>
+                            </a>
+                        </li>
                     </div><!-- menutop -->
                     <div class="menuBottom clear">
                         <li>
@@ -112,22 +129,26 @@
                 <ul class="menupc clear">
                     <li>
                         <a href="#">
-                            <img src="img/cont1_1.png"><p>독점 제품</p>
+                            <img src="img/cont1_1.png">
+                            <p>독점 제품</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/cont1_2.png"><p>레어 제품</p>
+                            <img src="img/cont1_2.png">
+                            <p>레어 제품</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/cont1_3.png"><p>미래공학 제품</p>
+                            <img src="img/cont1_3.png">
+                            <p>미래공학 제품</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/cont1_4.png"><p>VIP 회원혜택</p>
+                            <img src="img/cont1_4.png">
+                            <p>VIP 회원혜택</p>
                         </a>
                     </li>
                 </ul><!-- menupc -->
@@ -150,14 +171,16 @@
                             <div class="btn">
                                 <p>보러가기</p>
                             </div>
-                        </a></li>
+                        </a>
+                    </li>
                     <li>
                         <a href="#">
                             <img src="img/cont2_grootmb.png">
                             <div class="btn">
                                 <p>보러가기</p>
                             </div>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul><!-- mb -->
                 <div class="cont_pc">
                     <div class="contin">
@@ -196,7 +219,10 @@
                 <span>줄</span>
                 <div class="recommendin">
                     <div class="youtube">
-                        <iframe src="https://www.youtube.com/embed/COp9QmyFnGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/COp9QmyFnGw" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div><!-- youtube -->
                     <div class="txt">
                         <span>
@@ -207,7 +233,7 @@
                                 <dt>레고 쥬라기 월드<br> : 이슬라 누브라 섬의 진실</dt>
                                 <dd>
                                     대니는 로봇 공룡을 사용해 쥬라기 월드를<br>
-                                    파괴하기 위한 계획을 완성하려 한다.<br> 
+                                    파괴하기 위한 계획을 완성하려 한다.<br>
                                     과연 오웬과 그의 랩터들은 티라노를 도와 대니를<br> 저지하고 섬을 지킬 수 있을지
                                 </dd>
                             </ul>
@@ -280,11 +306,13 @@
                     <li><a href="#">접근성</a></li>
                     <li><a href="#">쿠키설정</a></li>
                 </ul>
-                <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 키마의 전설, 닌자고, 바이오니클, 마인드스톰 및 믹셀은 레고 그룹의 상표 및/ 또는 저작권입니다. ⓒ2022 The LEGO Groupe. All rights reserved. 이 사이트를 이용하면 이용약관에 동의하는 것으로 간주됩니다.</p>
+                <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 키마의 전설,
+                    닌자고, 바이오니클, 마인드스톰 및 믹셀은 레고 그룹의 상표 및/ 또는 저작권입니다. ⓒ2022 The LEGO Groupe. All rights reserved. 이 사이트를
+                    이용하면 이용약관에 동의하는 것으로 간주됩니다.</p>
             </div><!-- fBottom -->
         </footer><!-- footer -->
     </div><!-- wrap -->
-   
+
 </body>
 
 </html>
