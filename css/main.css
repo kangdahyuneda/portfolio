@@ -188,7 +188,7 @@
 #intro h2 {
     color: #953eb2;
     font-size: 70px;
-    font-family: 'ONE-Mobile-Regular';
+    font-family: 'ONE-Mobile-Title';
     padding-top: 100px;
     padding-left: 160px;
     font-weight: bold;
@@ -205,11 +205,12 @@
     font-weight: bold;
     background: url(../img/cont1_bluebar.png)no-repeat 0 0;
     padding-left: 20px;
+    font-family: 'ONE-Mobile-Regular';
 }
 
 .myself p>span {
     font-size: 30px;
-    color: #b376c8;
+    color: #7404b9;
 }
 
 .myself .photo {
@@ -429,7 +430,7 @@
 #app h2 {
     color: #953eb2;
     font-size: 36px;
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'ONE-Mobile-Title';
     padding-left: 160px;
     padding-bottom: 30px;
 }
