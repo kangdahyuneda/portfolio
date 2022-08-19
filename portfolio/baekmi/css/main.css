@@ -1040,6 +1040,63 @@
 
     /************1920px~ 컨트4 끝***********/
 
+    #etc {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #etc>ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #etc>ul>li {
+        width: calc((100% / 4)-1%);
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    #etc>ul>li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #etc>ul>li>a>img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: 5s;
+    }
+
+    #etc>ul>li:hover>a>img {
+        opacity: .6;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .footerin .lang li {
         font-size: 30px;
 
