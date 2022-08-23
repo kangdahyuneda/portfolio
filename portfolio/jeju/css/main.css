@@ -75,7 +75,7 @@
 /* 헤더 끝 */
 #mainVisual {
     width: 100%;
-    height: 840px;
+    height: 1000px;
     position: relative;
 }
 
@@ -91,7 +91,7 @@
 
 #mainVisual .maintxt {
     position: absolute;
-    top: 230px;
+    top: 300px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -107,6 +107,7 @@
     height: 40px;
     border: none;
     font-size: 0;
+    cursor: pointer;
 }
 
 .slick-next {
@@ -119,6 +120,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 /* 메인비쥬얼 끝 */
