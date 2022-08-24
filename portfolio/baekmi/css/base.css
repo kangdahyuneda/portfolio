@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-family: 'GabiaMaeumgyeol';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GabiaMaeumgyeol.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,11 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-image: url(../img/background.jpg);
-    font-family: 'GangwonEdu_OTFBoldA';
 }
 
 ul {
