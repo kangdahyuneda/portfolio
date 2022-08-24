@@ -753,7 +753,7 @@
 
     /************1920px~ 컨트1 끝***********/
     #container .cont2 {
-        height: 100vh;
+        height: 1365px;
 
     }
 
@@ -777,13 +777,13 @@
     }
 
     #container .cont2 .touch .t_img li {
-        width: 754px;
-        height: 900px;
+        width: 500px;
+        height: 650px;
         margin: 0 auto;
     }
 
     #container .cont2 .touch .t_img li img {
-        width: 754px;
+        width: 500px;
         height: auto;
         margin: 0 auto;
     }
