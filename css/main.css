@@ -900,9 +900,10 @@
     height: 520px;
 }
 
+
 .Rpub_site>ul>li {
     position: absolute;
-    width: 950px;
+    width: 100%;
     left: 80px;
     top: -70px;
     opacity: 0;
